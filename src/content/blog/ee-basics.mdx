@@ -1,0 +1,50 @@
+---
+title: "Understanding Kirchhoff's Laws: The Foundation of Circuit Analysis"
+date: "2025-08-28"
+author: "Muhammad Abbas"
+category: "EE"
+excerpt: "A beginner-friendly guide to KCL and KVL, the two fundamental laws that govern every electrical circuit."
+---
+
+import { Callout } from '@/components/ui/callout';
+
+Every Electrical Engineering student begins their journey with two fundamental principles: Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL). These aren't just abstract theories; they are the practical tools you'll use to analyze everything from a simple flashlight to a complex power grid.
+
+<Callout type="info">
+  **Key Takeaway:** KCL deals with current at a node (a junction), while KVL deals with voltage in a closed loop.
+</Callout>
+
+### Kirchhoff's Current Law (KCL)
+
+KCL is based on the principle of conservation of charge. It states that:
+
+> The algebraic sum of currents entering a node is zero.
+
+In simpler terms, whatever current flows into a junction must flow out.
+
+```javascript
+// Example: If I1 and I2 flow in, and I3 flows out
+const I1 = 2; // Amps
+const I2 = 3; // Amps
+const I3 = I1 + I2; // Must be 5 Amps
+console.log(`Current leaving the node (I3) is ${I3}A`);
+*Two more sample posts (`study-workflow.mdx`, `exam-prep.mdx`) would be created in a similar format.*
+
+#### Digital Products (JSON in `src/content/products/`)
+
+**`ee-notes.json`**
+```json
+{
+  "id": "prod_001",
+  "name": "Complete Power Systems Engineering Notes (PDF)",
+  "slug": "power-systems-engineering-notes",
+  "price": 1500,
+  "category": "Notes",
+  "excerpt": "Comprehensive, handwritten-style digital notes covering all major topics in power systems.",
+  "description": "...",
+  "previewImages": [
+    "/assets/product-previews/notes-preview-1.png",
+    "/assets/product-previews/notes-preview-2.png"
+  ],
+  "downloadFile": "/downloads/protected/power-systems-notes.pdf"
+}
